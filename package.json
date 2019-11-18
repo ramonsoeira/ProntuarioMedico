@@ -1,0 +1,60 @@
+{
+  "name": "prontuario-medico",
+  "version": "1.0.0",
+  "description": "Estabelece uma maneira segura e facil de criar prontuarios medicos eletronicos, distribui-lo e gerencia-lo.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrAbade/ProntuarioMedico.git"
+  },
+  "keywords": [
+    "prontuario",
+    "medico",
+    "blockchain",
+    "ethereum",
+    "nodejs",
+    "node",
+    "javascript",
+    "solidity",
+    "medico",
+    "hospitalar",
+    "react",
+    "reactjs",
+    "medica",
+    "hospital",
+    "prontuario",
+    "prontuario",
+    "eletronico",
+    "prontuario",
+    "medico",
+    "eletronico",
+    "apirest",
+    "api",
+    "rest",
+    "rest",
+    "api",
+    "express",
+    "projeto"
+  ],
+  "author": "Vinicius Abade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrAbade/ProntuarioMedico/issues"
+  },
+  "homepage": "https://github.com/MrAbade/ProntuarioMedico#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.11",
+    "nodemailer": "^6.3.1",
+    "nodemailer-express-handlebars": "^3.1.0",
+    "path": "^0.12.7",
+    "web3": "^1.2.4"
+  }
+}
