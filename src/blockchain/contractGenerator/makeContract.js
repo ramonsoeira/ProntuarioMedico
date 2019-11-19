@@ -1,12 +1,20 @@
-class MakeContract {
-    makeFile (params={}) {
-        const { name, data, groupings } = params
-        let version = require('solc').version().split('+')[0]
+const util = require('util')
+const exec = util.promisify(require('child_process').exec)
 
+class MakeContract {
+    async makeFile (params={}) {
+        const { name, data, groupings } = params
+
+        async function retV() {
+            const { stdout } = await exec('solcjs --version')
+            return stdout
+        }
+        
         let contract = ''
 
+        let version = await retV()
         //declare version
-        contract += 'pragma solidity ^' + version + ';\n\n'
+        contract += 'pragma solidity ^' + version.split('+')[0] + ";\n\n"
 
         //declare bd name
         contract += 'contract Prontuario' + name + 'BD {\n'
